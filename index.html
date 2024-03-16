@@ -4,12 +4,42 @@
 <link rel="shortcut icon" href=""/>
 <script type="text/javascript">
 
+    const falabem = () = {
+
+     const nome = document.Algo.elements["nome"].value;
+     alert(nome);
+        
+    }
+
+
+    
     const calculaimc = () = {
+        
+        const altura = document.Algo.elements["Altura"].value;
+        const peso = document.Algo.elements["Peso"].value;
 
-        alert('funcionou');
+        const imc = peso/(altura*altura);
 
+        if (imc<18.5){
+            alert("Voce está abaixo do peso");
+        }
 
-      
+        else if (imc >= 18.5 && imc<24.9){
+            alert("Voce está com peso normal");
+        }
+
+        else if (imc>=24.9 && imc<29.9){
+            alert("Voce está com Sobrepeso");
+        }
+            
+        else if(imc>==29.9 && imc<39.9){
+            alert("Voce está com obesidade");
+        }
+
+        else{
+            alert("Voce está com obesidade grave");
+        }
+        
     }
   
 </script>
@@ -24,6 +54,11 @@
 <br>
   <form id="Algo" name="Opa" action="#">
 
+    <label for="Nome">Digite seu nome:</label>
+    <input type="Text" id="nome">
+    <input type="Submit" value="nomear" onclick="falabem()">
+      <br>
+      
     <label for="Altura">Digite a altura</label>
     <input type="text" id="Altura" name="Altura">
 <br>
