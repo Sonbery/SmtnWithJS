@@ -29,10 +29,10 @@
     
     function calculaimc(){
         
-        const altura = parseFloat(document.getElementByItem('Peso').value);
-        const peso = parseFloat(document.getElementByItem('Peso').value);
+        var altura = parseFloat(document.getElementByItem('Peso').value);
+        var peso = parseFloat(document.getElementByItem('Peso').value);
 
-        const imc = peso/(altura*altura);
+        var imc = peso/(altura*altura);
 
         if (imc<18.5){
             alert("Voce está abaixo do peso");
