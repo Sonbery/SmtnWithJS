@@ -32,14 +32,14 @@
         var altura = parseFloat(document.getElementById('Altura').value);
         var peso = parseFloat(document.getElementById('Peso').value);
 
-        var imc = peso/(altura*altura);
+        var imc = (peso+altura);
 
-        if (imc<18.5){
-            alert("Voce está abaixo do peso");
+        if (imc>5 && imc<8){
+            alert("6 a 7");
         }
 
         else{
-            alert("Voce está com peso normal");
+            alert("resto");
         }
 
       
