@@ -6,8 +6,8 @@
     
     const calculaimc = () = {
         
-        const altura = document.Algo.elements["Altura"].value;
-        const peso = document.Algo.elements["Peso"].value;
+        const altura = parseFloat(document.getElementByItem('Peso').value);
+        const peso = parseFloat(document.getElementByItem('Peso').value);
 
         const imc = peso/(altura*altura);
 
@@ -47,11 +47,11 @@
   <form id="Algo" name="Opa" action="#">
       
     <label for="Altura">Digite a altura</label>
-    <input type="text" id="Altura" name="Altura">
+    <input type="text" id="Altura">
 <br>
     
     <label for="Peso">Digite o peso</label>
-    <input type="text" id="Peso" name="Peso">
+    <input type="text" id="Peso">
 <br>
 <br>
     
