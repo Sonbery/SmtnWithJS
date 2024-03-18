@@ -48,6 +48,34 @@
   
 </script>
   
+
+<h1>Pensando</h1>
+<br>
+
+<input id="nome">Digite seu nome</input> 
+<input id="comentario">Digite seu comentário</input>
+<br>
+<button onclick="apareceu()">Me aperta vai</button>
+<br>
+<br>
+<div id="cxnm"></div>
+<div id="cxtxt">
+
+<script>
+
+function apareceu();
+
+var nome = parseFloat(document.elementGetById('nome').value);
+
+var text = parseFloat(document.elementGetById('comentario').value);
+
+  document.elementGetById('cxnm').innerText=(nome);
+
+  document.elementGetById('cxtxt').innerText=(text);
+
+
+</script>
+
 </body>
 
   
